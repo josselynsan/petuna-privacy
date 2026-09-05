@@ -3,72 +3,201 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Política de privacidad — Petuna</title>
+  <title>Privacy Policy — Petuna / Política de privacidad</title>
+  <meta name="description" content="Petuna privacy policy (Spanish and English). Offline pet care organizer by Decsas." />
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1F2A28; }
-    h1 { color: #3D7A6A; }
-    h2 { margin-top: 2rem; font-size: 1.1rem; color: #3D7A6A; }
-    .updated { color: #5C6B67; font-size: 0.9rem; }
-    a { color: #3D7A6A; }
+    :root { --ink: #1F2A28; --sage: #3D7A6A; --muted: #5C6B67; --mist: #E8F0ED; }
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem 3rem; line-height: 1.6; color: var(--ink); }
+    h1 { color: var(--sage); font-size: 1.6rem; margin-bottom: 0.35rem; }
+    h2 { margin-top: 2rem; font-size: 1.1rem; color: var(--sage); }
+    .updated { color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--sage); }
+    .lang-bar {
+      display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;
+      margin-bottom: 1.5rem; padding: 0.75rem 1rem; background: var(--mist); border-radius: 12px;
+    }
+    .lang-bar span { color: var(--muted); font-size: 0.9rem; margin-right: 0.25rem; }
+    .lang-bar button {
+      border: 1px solid var(--sage); background: #fff; color: var(--sage);
+      border-radius: 999px; padding: 0.35rem 0.9rem; cursor: pointer; font-weight: 600;
+    }
+    .lang-bar button[aria-pressed="true"] { background: var(--sage); color: #fff; }
+    .lang-panel[hidden] { display: none; }
   </style>
 </head>
 <body>
-  <h1>Política de privacidad de Petuna</h1>
-  <p class="updated">Última actualización: 5 de septiembre de 2026</p>
+  <nav class="lang-bar" aria-label="Language / Idioma">
+    <span>Language / Idioma:</span>
+    <button type="button" id="btn-es" aria-pressed="true" data-lang="es">Español</button>
+    <button type="button" id="btn-en" aria-pressed="false" data-lang="en">English</button>
+  </nav>
 
-  <h2>1. Responsable</h2>
-  <p>Petuna es una aplicación de organización de salud y bienestar de mascotas operada por su desarrollador (Decsas).<br />
-  Contacto: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
+  <!-- ───────────── Español ───────────── -->
+  <section id="es" class="lang-panel" lang="es">
+    <h1>Política de privacidad de Petuna</h1>
+    <p class="updated">Última actualización: 5 de septiembre de 2026</p>
 
-  <h2>2. Resumen</h2>
-  <p>Petuna funciona principalmente sin conexión. Los datos de tus mascotas se almacenan localmente en tu dispositivo Android. No vendemos ni compartimos tus datos con terceros para publicidad. No hay cuenta, nube ni sincronización.</p>
+    <h2>1. Responsable</h2>
+    <p>Petuna es una aplicación de organización de salud y bienestar de mascotas operada por su desarrollador (Decsas).<br />
+    Contacto: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
 
-  <h2>3. Datos que recopilamos</h2>
-  <ul>
-    <li>Datos que tú ingresas: perfiles de mascotas, vacunas, medicamentos, consultas, peso, recordatorios, notas y archivos/fotos que adjuntes.</li>
-    <li>Datos de compra in-app (suscripciones Premium mensual o anual) gestionados por Google Play Billing.</li>
-    <li>No recopilamos ubicación, contactos, SMS ni micrófono. La cámara solo se usa si tú eliges tomar una foto, y la imagen queda en el dispositivo.</li>
-  </ul>
+    <h2>2. Resumen</h2>
+    <p>Petuna funciona principalmente sin conexión. Los datos de tus mascotas se almacenan localmente en tu dispositivo Android. No vendemos ni compartimos tus datos con terceros para publicidad. No hay cuenta, nube ni sincronización.</p>
 
-  <h2>4. Uso de los datos</h2>
-  <ul>
-    <li>Mostrar y organizar el historial de cuidados de tu mascota.</li>
-    <li>Programar recordatorios locales (notificaciones en el dispositivo).</li>
-    <li>Procesar suscripciones Premium vía Google Play (mensual o anual).</li>
-    <li>Exportar un PDF del historial cuando tú lo eliges y lo compartes.</li>
-  </ul>
+    <h2>3. Datos que recopilamos</h2>
+    <ul>
+      <li>Datos que tú ingresas: perfiles de mascotas, vacunas, medicamentos, consultas, peso, recordatorios, notas y archivos/fotos que adjuntes.</li>
+      <li>Datos de compra in-app (suscripciones Premium mensual o anual) gestionados por Google Play Billing.</li>
+      <li>No recopilamos ubicación, contactos, SMS ni micrófono. La cámara solo se usa si tú eliges tomar una foto, y la imagen queda en el dispositivo.</li>
+    </ul>
 
-  <h2>5. Almacenamiento</h2>
-  <p>Los datos permanecen en tu teléfono. Si desinstalas la app, los datos locales se eliminan salvo copias del sistema operativo.</p>
+    <h2>4. Uso de los datos</h2>
+    <ul>
+      <li>Mostrar y organizar el historial de cuidados de tu mascota.</li>
+      <li>Programar recordatorios locales (notificaciones en el dispositivo).</li>
+      <li>Procesar suscripciones Premium vía Google Play (mensual o anual).</li>
+      <li>Exportar un PDF del historial cuando tú lo eliges y lo compartes.</li>
+    </ul>
 
-  <h2>6. Terceros</h2>
-  <ul>
-    <li><strong>Google Play</strong>: facturación de suscripciones Premium.</li>
-    <li><strong>Compartir archivo</strong>: solo al exportar un PDF que tú eliges compartir con otra app (WhatsApp, correo, etc.).</li>
-  </ul>
+    <h2>5. Almacenamiento</h2>
+    <p>Los datos permanecen en tu teléfono. Si desinstalas la app, los datos locales se eliminan salvo copias del sistema operativo.</p>
 
-  <h2>7. Tus derechos</h2>
-  <p>Puedes eliminar tus datos desde la app o desinstalándola. Consultas: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
+    <h2>6. Terceros</h2>
+    <ul>
+      <li><strong>Google Play</strong>: facturación de suscripciones Premium.</li>
+      <li><strong>Compartir archivo</strong>: solo al exportar un PDF que tú eliges compartir con otra app (WhatsApp, correo, etc.).</li>
+    </ul>
 
-  <h2 id="eliminacion-datos">7.1. Solicitud de eliminación de datos (Petuna)</h2>
-  <p><strong>Desarrollador:</strong> Decsas — app <strong>Petuna</strong> en Google Play.</p>
-  <p><strong>Pasos para borrar tus datos:</strong></p>
-  <ol>
-    <li><strong>Opción A (recomendada):</strong> Desinstala Petuna desde Ajustes → Apps → Petuna → Desinstalar. Esto elimina los registros de mascotas y cuidados almacenados localmente en tu dispositivo.</li>
-    <li><strong>Opción B:</strong> En la app, elimina mascotas o registros individuales (vacunas, medicamentos, consultas, etc.) desde cada módulo.</li>
-    <li><strong>Opción C:</strong> Escríbenos a <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a> con asunto «Eliminación de datos Petuna» e indica tu solicitud. Te responderemos en un plazo máximo de 30 días.</li>
-  </ol>
-  <p><strong>Datos que se eliminan:</strong> perfiles de mascotas, vacunas, medicamentos, consultas, exámenes, peso, desparasitaciones, antiparasitarios, dental, alimentación, recordatorios, notas, fotos/documentos locales y PDFs generados en el dispositivo.</p>
-  <p><strong>Datos que pueden conservarse:</strong> registros de suscripción Premium gestionados por <strong>Google Play</strong> (fuera del control directo de Petuna). Consulta la política de Google Play para gestionar o cancelar suscripciones.</p>
-  <p><strong>Plazos:</strong> la eliminación local es inmediata al desinstalar la app. Las solicitudes por correo se atienden en hasta 30 días. No almacenamos copias en servidores propios.</p>
+    <h2>7. Tus derechos</h2>
+    <p>Puedes eliminar tus datos desde la app o desinstalándola. Consultas: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
 
-  <h2>8. Compras Premium</h2>
-  <p>El plan gratuito no tiene costo. Premium se ofrece como suscripción mensual o anual a través de Google Play Billing. Las suscripciones se renuevan automáticamente hasta que las canceles en Google Play. Petuna no almacena datos de tarjetas.</p>
+    <h2 id="eliminacion-datos">7.1. Solicitud de eliminación de datos (Petuna)</h2>
+    <p><strong>Desarrollador:</strong> Decsas — app <strong>Petuna</strong> en Google Play.</p>
+    <p><strong>Pasos para borrar tus datos:</strong></p>
+    <ol>
+      <li><strong>Opción A (recomendada):</strong> Desinstala Petuna desde Ajustes → Apps → Petuna → Desinstalar. Esto elimina los registros de mascotas y cuidados almacenados localmente en tu dispositivo.</li>
+      <li><strong>Opción B:</strong> En la app, elimina mascotas o registros individuales (vacunas, medicamentos, consultas, etc.) desde cada módulo.</li>
+      <li><strong>Opción C:</strong> Escríbenos a <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a> con asunto «Eliminación de datos Petuna» e indica tu solicitud. Te responderemos en un plazo máximo de 30 días.</li>
+    </ol>
+    <p><strong>Datos que se eliminan:</strong> perfiles de mascotas, vacunas, medicamentos, consultas, exámenes, peso, desparasitaciones, antiparasitarios, dental, alimentación, recordatorios, notas, fotos/documentos locales y PDFs generados en el dispositivo.</p>
+    <p><strong>Datos que pueden conservarse:</strong> registros de suscripción Premium gestionados por <strong>Google Play</strong> (fuera del control directo de Petuna). Consulta la política de Google Play para gestionar o cancelar suscripciones.</p>
+    <p><strong>Plazos:</strong> la eliminación local es inmediata al desinstalar la app. Las solicitudes por correo se atienden en hasta 30 días. No almacenamos copias en servidores propios.</p>
 
-  <h2>9. Menores</h2>
-  <p>Petuna no está dirigida a menores de 13 años.</p>
+    <h2>8. Compras Premium</h2>
+    <p>El plan gratuito no tiene costo. Premium se ofrece como suscripción mensual o anual a través de Google Play Billing. Las suscripciones se renuevan automáticamente hasta que las canceles en Google Play. Petuna no almacena datos de tarjetas.</p>
 
-  <h2>10. Cambios</h2>
-  <p>Publicaremos actualizaciones en esta página y, si aplica, mediante una actualización en Google Play.</p>
+    <h2>9. Menores</h2>
+    <p>Petuna no está dirigida a menores de 13 años.</p>
+
+    <h2>10. Cambios</h2>
+    <p>Publicaremos actualizaciones en esta página y, si aplica, mediante una actualización en Google Play.</p>
+  </section>
+
+  <!-- ───────────── English ───────────── -->
+  <section id="en" class="lang-panel" lang="en" hidden>
+    <h1>Petuna Privacy Policy</h1>
+    <p class="updated">Last updated: September 5, 2026</p>
+
+    <h2>1. Controller</h2>
+    <p>Petuna is a pet health and wellness organization app operated by its developer (Decsas).<br />
+    Contact: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
+
+    <h2>2. Summary</h2>
+    <p>Petuna works primarily offline. Your pets' data is stored locally on your Android device. We do not sell or share your data with third parties for advertising. There is no account, cloud, or sync.</p>
+
+    <h2>3. Data we collect</h2>
+    <ul>
+      <li>Data you enter: pet profiles, vaccines, medications, visits, weight, reminders, notes, and any files/photos you attach.</li>
+      <li>In-app purchase data (Premium monthly or annual subscriptions) handled by Google Play Billing.</li>
+      <li>We do not collect location, contacts, SMS, or microphone data. The camera is used only if you choose to take a photo, and the image stays on the device.</li>
+    </ul>
+
+    <h2>4. How we use data</h2>
+    <ul>
+      <li>Show and organize your pet's care history.</li>
+      <li>Schedule local reminders (on-device notifications).</li>
+      <li>Process Premium subscriptions via Google Play (monthly or annual).</li>
+      <li>Export a PDF of the history when you choose to create and share it.</li>
+    </ul>
+
+    <h2>5. Storage</h2>
+    <p>Data stays on your phone. If you uninstall the app, local data is deleted except for any copies kept by the operating system.</p>
+
+    <h2>6. Third parties</h2>
+    <ul>
+      <li><strong>Google Play</strong>: billing for Premium subscriptions.</li>
+      <li><strong>File sharing</strong>: only when you export a PDF and choose to share it with another app (WhatsApp, email, etc.).</li>
+    </ul>
+
+    <h2>7. Your rights</h2>
+    <p>You can delete your data in the app or by uninstalling it. Questions: <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a></p>
+
+    <h2 id="data-deletion">7.1. Data deletion request (Petuna)</h2>
+    <p><strong>Developer:</strong> Decsas — <strong>Petuna</strong> app on Google Play.</p>
+    <p><strong>How to delete your data:</strong></p>
+    <ol>
+      <li><strong>Option A (recommended):</strong> Uninstall Petuna from Settings → Apps → Petuna → Uninstall. This removes pet and care records stored locally on your device.</li>
+      <li><strong>Option B:</strong> In the app, delete pets or individual records (vaccines, medications, visits, etc.) from each module.</li>
+      <li><strong>Option C:</strong> Email <a href="mailto:contacto@decsas.com.co">contacto@decsas.com.co</a> with subject “Petuna data deletion” and describe your request. We will respond within 30 days.</li>
+    </ol>
+    <p><strong>Data deleted:</strong> pet profiles, vaccines, medications, visits, exams, weight, dewormings, parasite treatments, dental, feeding, reminders, notes, local photos/documents, and PDFs generated on the device.</p>
+    <p><strong>Data that may be retained:</strong> Premium subscription records managed by <strong>Google Play</strong> (outside Petuna’s direct control). See Google Play’s policy to manage or cancel subscriptions.</p>
+    <p><strong>Timelines:</strong> local deletion is immediate when you uninstall the app. Email requests are handled within 30 days. We do not keep copies on our own servers.</p>
+
+    <h2>8. Premium purchases</h2>
+    <p>The Free plan has no cost. Premium is offered as a monthly or annual subscription through Google Play Billing. Subscriptions renew automatically until you cancel them in Google Play. Petuna does not store card details.</p>
+
+    <h2>9. Children</h2>
+    <p>Petuna is not directed at children under 13.</p>
+
+    <h2>10. Changes</h2>
+    <p>We will post updates on this page and, where applicable, through a Google Play app update.</p>
+  </section>
+
+  <script>
+    (function () {
+      var es = document.getElementById('es');
+      var en = document.getElementById('en');
+      var btnEs = document.getElementById('btn-es');
+      var btnEn = document.getElementById('btn-en');
+
+      function setLang(lang) {
+        var isEs = lang === 'es';
+        es.hidden = !isEs;
+        en.hidden = isEs;
+        btnEs.setAttribute('aria-pressed', isEs ? 'true' : 'false');
+        btnEn.setAttribute('aria-pressed', isEs ? 'false' : 'true');
+        document.documentElement.lang = lang;
+        try { localStorage.setItem('petuna_privacy_lang', lang); } catch (e) {}
+        if (history.replaceState) {
+          var hash = location.hash || '';
+          var url = location.pathname + '?lang=' + lang + hash;
+          history.replaceState(null, '', url);
+        }
+      }
+
+      btnEs.addEventListener('click', function () { setLang('es'); });
+      btnEn.addEventListener('click', function () { setLang('en'); });
+
+      var params = new URLSearchParams(location.search);
+      var stored = null;
+      try { stored = localStorage.getItem('petuna_privacy_lang'); } catch (e) {}
+      var hash = (location.hash || '').toLowerCase();
+      var initial = 'es';
+      if (params.get('lang') === 'en' || hash === '#en' || hash === '#data-deletion') initial = 'en';
+      else if (params.get('lang') === 'es' || hash === '#es' || hash === '#eliminacion-datos') initial = 'es';
+      else if (stored === 'en' || stored === 'es') initial = stored;
+      else if ((navigator.language || '').toLowerCase().startsWith('en')) initial = 'en';
+
+      setLang(initial);
+
+      if (hash === '#data-deletion' || hash === '#eliminacion-datos') {
+        setTimeout(function () {
+          var el = document.getElementById(hash.slice(1));
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    })();
+  </script>
 </body>
 </html>
